@@ -36,11 +36,14 @@ nav a{
 
     nav .header_right{ 
         display:  flex;
-        align-items: center;
+        flex: 1;
+        align-items: right;
         justify-content: flex-end;
         margin-top: 28px;
         margin-bottom: 10px;
         padding-bottom: 10px;
+        text-align: right;
+        margin-right: 30px;
        }
 
 
@@ -59,6 +62,25 @@ nav a{
 
 
 }
+
+
+nav .header_right a{
+    display:  flex;
+    
+    align-items: right;
+    justify-content: flex-end;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    position: relative;
+    bottom: 25px;
+    padding: 0 30px;
+
+}
+
+
+
 
 .header_right.header_left{
     padding: 1rem;}
@@ -195,9 +217,60 @@ nav img:hover{
    padding: 3px 5px;
 }
 
- 
+@media only screen and (max-width: 417px){
+    body > nav > div.header_right{
+        margin:  50px;
+        padding: 0 50px;
+        position: relative;
+        top: -25px;
+        right: 0;
+        left: 0;
+        text-align: right;
+        padding: 0 -20px;
+        
+    
+    }
+
+
+
+    body > section:nth-child(3) > div{
+        margin-left: 30px;
+        padding-left: 110px;
+        position: relative;
+        bottom: 610px;
+    }
+
+
+    body > nav > div.header_right > a:nth-child(1){
+        margin-right: -40px;
+    }
+
+    body > section:nth-child(3) > div{
+        position: relative;
+        bottom: -10px;
+        top: -110px;
+    }
+
+
+    body > nav > div.header_right > #items{
+        right: 0;
+        margin-left: 20px ;}
+        
+
+
+
+
+
+       
+        
+        
+}
  
   
+
+
+
+@media only screen and (max-width: 417px)
 
   
   
